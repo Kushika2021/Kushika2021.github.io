@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="getProperties()">
+    <header>
+        <div class="banner_img">
+            <img src="./nft/banner.png" alt="">
+            <div class="centered">
+                <h1> S7NS STATION</h1>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="./nft/logo-1.png" alt="">
+        </div>
+        <div class="links">
+            <nav>
+                <ul>
+                    <li> <a href="./index.html"> Home </a></li>
+                    <li> <a href="./nft-gallery.html"> Gallery </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <button type="button" class="collapsible"></button>
+        <div class="props">
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <small><b>&copy; copyright</b></small><br>
+        <small><b>&copy; NAME : </b> Nyathi Kushika Goud</small> <br>
+        <small><b>E-MAIL :</b> Knyathi@aum.edi</small> <br>
+        <small><b>S-NUMBER :</b>S00393271</small>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
